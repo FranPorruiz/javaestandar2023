@@ -45,6 +45,10 @@ public class CursosService {
 				break;//una vez encontrado, salimos con break
 			}
 		}
+		
+		//La interface predicate removIf te hace un for y te elimina 
+		//todos los cursos que coinciden con el nombre
+		//cursos.removeIf(c->c.getNombre().equals(nombre));
 		/*
 		//Esta opción es si requerimos el indice
 		for (int i = 0; i < cursos.size(); i++) {

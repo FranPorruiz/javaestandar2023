@@ -15,7 +15,7 @@ public class MiVentana extends JFrame{
 		super(titulo); //constructor con titulo que se hereda de la clase JFrame
 		//establecer tamaño, posicion de la ventana y la hacemos visible
 		setBounds(100, 50, 600, 400);//las dos primeras son la posicion y las dos ultimas son el tamaño de la ventana
-		getContentPane().setBackground(new Color(18,173,182255));//para poner el color al panel(es lo que cogemos al principio)
+		getContentPane().setBackground(Color.YELLOW);//para poner el color al panel(es lo que cogemos al principio)
 		setVisible(true);//para ponerlo visible
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);//con esta opcion eliminamos al cerrar
 		
@@ -26,7 +26,7 @@ public class MiVentana extends JFrame{
 		super(titulo);
 		//establecer tamaño, posicion de la ventana y la hacemos visible
 		setBounds(x, y, w, h);//las dos primeras son la posicion y las dos ultimas son el tamaño de la ventana
-		getContentPane().setBackground(Color.GREEN);//para poner el color al panel(es lo que cogemos al principio)
+		getContentPane().setBackground(new Color(18,173,182));//para poner el color al panel(es lo que cogemos al principio)
 		inicializarCompronentes();//metodo par alanzar los componentes
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);//con esta opcion eliminamos al cerrar
 		setVisible(true);//para ponerlo visible, debe ser lo último
@@ -54,7 +54,6 @@ public class MiVentana extends JFrame{
 		add(txtUsuario);
 		add(txtPasswprd);
 		add(btnEntrar);
-		
 		//gestion de eventos, generamos clases , al hacrlos nos genera el metodo de abajo
 		//la clase es anonima, no hay nada que indique que es una clase
 		//Creamos la clase y luego creamos un objeto de ella
@@ -91,6 +90,10 @@ public class MiVentana extends JFrame{
 		//ahora lo que hacemos es incluirle al boton el metodo que permite añadir el AccionListener
 		//que hemos generado arriba
 		btnEntrar.addActionListener(listener);
+		
+		
+		
+		
 	}
 
 }
